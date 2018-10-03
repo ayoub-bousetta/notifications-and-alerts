@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" href="dist/css/alerts.css">
+        <link rel="stylesheet" href="css/main.css">
         <title>Alerts - because Bootstrap alerts aren't that cool </title>
     </head>
 <body>
@@ -34,6 +34,49 @@ help_outline
 
     -->
 
+
+    <div class="container">
+
+<header>
+
+    <h1>Easy Alerts</h1>
+    <span>notification & Alerts AIO</span>
+
+</header>
+    
+
+<h2>Baisc use case </h2>
+
+<pre class="language-markup"><code class="language-markup">
+&lt;div class="alerts warns ">
+        &lt;span>
+            &lt;i class="material-icons">error_outline&lt;/i>
+        &lt;/span>
+         &lt;div class="message">
+            &lt;b>Warning!&lt;/b>
+            &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. &lt;a href="#">Click here&lt;/a>&lt;/p>
+        &lt;/div>
+            &lt;i class="material-icons">clear&lt;/i>
+&lt;/div>
+    </code></pre>
+
+<br>
+
+<p>Add "<span class="success">success</span>,<span class="warns">warns</span>,<span class="errors">errors</span> or <span class="info">info</span>" to with the alerts class. </p>
+
+
+<pre>
+<code class="language-scss">
+    //change colors using the scss file on github then use npm the rebuild
+$success:#1CB7BE;
+$errors:#F46B66;
+$warns:#ffd600;
+$info:#47AAF0;
+</code>
+</pre>
+
+<br>
+
     <div class="alerts warns ">
            <span><i class="material-icons">
                 error_outline
@@ -49,6 +92,121 @@ help_outline
         
 
     </div>
+
+    <br>
+
+    <div class="alerts success ">
+            <span>
+                    <i class="material-icons">
+                    check_circle_outline
+                    </i></span>
+         <div class="message">
+                 <b>Warning!</b>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Click here</a></p>
+              
+         </div>
+         <i class="material-icons">
+                 clear
+                 </i>
+         
+ 
+     </div>
+
+     <br>
+     <div class="alerts info ">
+            <span><i class="material-icons">
+                    help_outline
+                    </i></span>
+         <div class="message">
+                 <b>Warning!</b>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Click here</a></p>
+              
+         </div>
+         <i class="material-icons">
+                 clear
+                 </i>
+         
+ 
+     </div>
+
+     <br>
+     <div class="alerts errors ">
+            <span><i class="material-icons">
+                    highlight_off
+                    </i></span>
+         <div class="message">
+                 <b>Warning!</b>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Click here</a></p>
+              
+         </div>
+         <i class="material-icons">
+                 clear
+                 </i>
+         
+ 
+     </div>
+
+
+
+     <h3>More use cases </h3>
+
+     <p>Use push or mobile class to specify your needed type.</p>
+
+     <pre class="language-markup"><code class="language-markup">
+            &lt;div class="alerts warns mobile">&lt;/div>
+            &lt;div class="alerts warns push"> &lt;/div>
+     </code></pre>
+
+<br>
+
+<div class="row">
+
+    <div class="col-6">
+
+        <div class="alerts errors mobile">
+            <span><i class="material-icons">
+                    highlight_off
+                    </i></span>
+         <div class="message">
+                 <b>Warning!</b>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Click here</a></p>
+              
+         </div>
+         <i class="material-icons">
+                 clear
+                 </i>
+         
+ 
+     </div>
+    </div>
+
+    <div class="col-6">
+
+            <div class="alerts errors push">
+                    <span><i class="material-icons">
+                            highlight_off
+                            </i></span>
+                 <div class="message">
+                         <b>Warning!</b>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="#">Click here</a></p>
+                      
+                 </div>
+                 <i class="material-icons">
+                         clear
+                         </i>
+                 
+         
+             </div>
+    </div>
+
+</div>
+
+
+
+
+</div>
+     <script src="js/app.bandle.js"></script>
+
 
 
     
