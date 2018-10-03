@@ -305,22 +305,49 @@ header {
   box-sizing: border-box;
   padding: 15px;
   margin-bottom: 20px; }
-
-h2 {
-  font-size: 1.2rem; }
-
-p {
-  font-size: 1rem;
-  margin: 0px;
-  color: #585959; }
-  p span.success {
-    color: #1CB7BE; }
-  p span.warns {
-    color: #ffd600; }
-  p span.info {
-    color: #47AAF0; }
-  p span.errors {
-    color: #F46B66; }
+  .container footer {
+    margin-top: 20px;
+    width: 100%;
+    background: #1c1b1a;
+    color: #fff;
+    position: relative;
+    padding: 60px 0; }
+    .container footer .copyright-info {
+      text-align: center;
+      color: #fff;
+      font-size: .8rem; }
+  .container h2 {
+    font-size: 1.2rem; }
+  .container p {
+    font-size: 1rem;
+    margin: 0px;
+    color: #585959; }
+    .container p span.success {
+      color: #1CB7BE; }
+    .container p span.warns {
+      color: #ffd600; }
+    .container p span.info {
+      color: #47AAF0; }
+    .container p span.errors {
+      color: #F46B66; }
+  .container .inst h3 {
+    margin-bottom: 0px; }
+  .container .inst p {
+    margin: 10px 0px;
+    position: relative;
+    padding-left: 20px;
+    display: inline-block; }
+    .container .inst p a {
+      color: #585959; }
+    .container .inst p:before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      background: #78cdd1;
+      border-radius: 8px; }
 
 
 /*# sourceMappingURL=main.css.map*/
