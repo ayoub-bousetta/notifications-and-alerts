@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$fonstSize:18px;
+$success:#1CB7BE;
+$errors:#F46B66;
+$warns:#ffd600;
+$info:#47AAF0;
+
+
+$textColor:#585959;
+
+$bgColor:#fff;
+
+$fontFam:'Open Sans', sans-serif;
+
+.alerts{
+
+    font-family: $fontFam;
+    background: $bgColor;
+    font-size:$fonstSize;
+  
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.18), inset 0 1px 3px 0 #fff;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 6px;position: relative;
+
+    a{
+        color: $textColor;
+        outline:0;
+        text-decoration: underline;
+    
+    }
+
+
+    .message{
+        margin-left: 10px;
+        b,strong{
+            font-size: 0.9em;
+        }
+
+        p{
+            font-size: 0.8em;
+            margin: 0px;
+            color: $textColor;
+            font-weight: 400;
+        }
+    }
+   
+
+    span{
+        border-top-left-radius: 6px;
+        border-bottom-left-radius:6px;
+        background:$bgColor;
+        padding: 15px;display: block;
+
+        
+        i{
+            font-size: 1.5em; cursor:auto;     color:$bgColor; margin-right: 0px;font-weight:300; 
+        }
+
+    }
+
+    i{
+        display: block;font-size: 0.8em;font-weight:bolder; 
+        margin-left: auto;text-align: right;
+        margin-right: 10px; color:$bgColor;
+        cursor: pointer;
+    
+    }
+
+
+    &.success{
+        span{
+            background:$success;
+            i{
+                color:$bgColor;
+            }
+        }
+        i{
+            color:$success;
+        }
+       
+    }
+
+    &.errors{
+        span{
+            background:$errors;
+            i{
+                color:$bgColor;
+            }
+        }
+        i{
+            color:$errors;
+        }
+       
+    }
+
+
+    &.info{
+        span{
+            background:$info;
+            i{
+                color:$bgColor;
+            }
+        }
+        i{
+            color:$info;
+        }
+       
+    }
+
+
+    &.warns{
+        span{
+            background:$warns;
+            i{
+                color:$bgColor;
+            }
+        }
+        i{
+            color:$warns;
+        }
+       
+    }
+
+
+    //Mobile Notif 
+
+    &.mobile{
+
+        flex-direction: column;
+        justify-content: center;
+        max-width: 420px;
+        width: 100%;
+        flex-wrap: wrap;
+
+        i{
+            position: absolute;
+            color:#fff;
+            right: 0px;
+            top: 10px;
+        }
+
+        span{
+            padding: 0px;
+            text-align: center;
+            width: 100%;
+            border-radius: 0px;
+            padding: 20px 0px;
+
+
+            border-top-left-radius: 6px;
+            border-bottom-left-radius:0px;
+
+            border-top-right-radius: 6px;
+            border-bottom-right-radius:0px;
+
+            i{position: relative;right: 0px;
+                top: 0px;
+                margin: 0 auto;    text-align: center;font-size: 3em;
+            }
+        }
+
+
+
+        
+    .message{
+        margin-left:0px;
+        padding: 20px 8px;
+
+    }
+
+      
+        
+
+
+    }
+
+
+    //Push notif 
+
+    &.push{
+
+        max-width: 320px;
+        width: 100%;
+        display: block;
+
+        i{
+            position: absolute;
+            color:#fff;
+            right: 0px;
+            top: 10px; z-index: 2;
+        }
+
+        span{
+
+            position: absolute;
+            z-index: 1;width: 100%;
+            padding: 0px;
+            height: 100%;
+
+
+
+            border-radius: 6px;
+         
+            i{text-align: left;
+                left: 5px;
+                top: 5px;   
+                margin: 0 auto;   font-size: 2em;
+            }
+        }
+
+
+
+        
+    .message{
+        margin-left:0px;
+        position: relative;
+        padding: 20px 20px;
+        z-index: 2;
+        text-align: center;
+       
+
+    }
+
+      
+        
+
+
+    }
+
+
+
+
+}
